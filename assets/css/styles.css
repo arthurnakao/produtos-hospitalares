@@ -1,3 +1,10 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .logo {
     width: 40px;
 }
@@ -42,6 +49,12 @@
     color: #5566FF;
     font-size: 1.25em;
     font-style: italic;
+}
+
+.cart__product__image {
+    height: 100px;
+    object-fit: cover;
+    padding: 5px;
 }
 
 .footer {
