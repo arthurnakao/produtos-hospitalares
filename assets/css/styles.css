@@ -57,6 +57,20 @@ body {
     padding: 5px;
 }
 
+.cart__input__amount {
+    max-width: 40px;
+}
+
+.cart__input__amount::-webkit-outer-spin-button, 
+.cart__input__amount::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Remove arrows from number input */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 .footer {
     background-color: #333333;
     color: #FAFAFA;
@@ -79,4 +93,19 @@ body {
 .footer__small-text {
     font-weight: bold;
     font-size: 0.75em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.fs-08775 {
+    font-size: 0.8775em;
 }

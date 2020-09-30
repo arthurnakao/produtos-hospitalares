@@ -33,14 +33,14 @@
 
     <div class="container mb-4">
         <div class="row">
-            <div class="col-md-9">
-                <h2>Items</h2>
-                <div class="card">
+            <div class="col-lg-9">
+                <h2 class="text-center">Items</h2>
+                <div class="card mb-3">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-lg-3 align-self-center">
                             <img class="product__image" src="./assets/images/produtos/medidor_de_pressao.jpg" alt="Medidor de Pressão">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <div class="card-body">
                                 <div class="text-center">
                                     <h3 class="card-title">Medidor de Pressão</h3>
@@ -50,18 +50,162 @@
                                 <p class="card-text text-justify">Medidor de pressão é um aparelho para verificar a pressão arterial (PA). Consiste num sistema para compressão da artéria braquial.</p>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="card-footer row h-100 p-0 m-0">
+                        <div class="col-lg-3">
+                            <div class="card-footer row h-100 m-0">
                                 <div class="text-center col-12 align-self-center">
-                                    <a href="#">Remover</a>
+                                    <p class="fs-08775">Quantidade</p>
+                                    <div class="input-group mb-3 justify-content-center">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-sm btn-outline-secondary" type="button">-</button>
+                                        </div>
+                                        <input type="number" class="cart__input__amount form-control p-0 text-center" placeholder="" aria-label="" aria-describedby="basic-addon1" value="1">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-sm btn-outline-secondary" type="button">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row">
+                        <div class="col-lg-3 align-self-center">
+                            <img class="product__image" src="./assets/images/produtos/seringa.jpg" alt="Seringa">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <h3 class="card-title">Seringa</h3>
+                                </div>
+                                <p class="card-text font-weight-bold mb-0">De <s>R$ 1.09</s></p>
+                                <p class="product__discount__price card-text font-weight-bold">Por R$ 1.09</p>
+                                <p class="card-text text-justify">Uma seringa é um equipamento de bombeamento, provido de uma agulha, usado por profissionais da área da saúde (ou eventualmente por usuários de drogas) para: inserir substâncias líquidas por via intravenosa, intramuscular, intracardíaca, subcutânea, intradérmica, intra-articular; retirar sangue; ou, ainda, realizar uma punção aspirativa em um paciente.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card-footer row h-100 m-0">
+                                <div class="text-center col-12 align-self-center">
+                                    <p class="fs-08775">Quantidade</p>
+                                    <div class="input-group mb-3 justify-content-center">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-sm btn-outline-secondary" type="button">-</button>
+                                        </div>
+                                        <input type="number" class="cart__input__amount form-control p-0 text-center" placeholder="" aria-label="" aria-describedby="basic-addon1" value="1">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-sm btn-outline-secondary" type="button">+</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <p>ola</p>
+            <div class="col-lg-3">
+                <h3 class="text-center">Finalizar Compra</h3>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="00000-000" aria-label="CEP" aria-describedby="CEP">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button">Calcular Frete</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row m-0">
+                        <div class="col-6 align-self-center p-0">
+                            <p class="text-center my-auto">Subtotal</p>
+                        </div>
+                        <div class="col-6 align-self-center p-0">
+                            <p class="text-center my-auto">R$66.09</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row m-0">
+                        <div class="col-6 align-self-center p-0">
+                            <p class="text-center my-auto">Frete</p>
+                        </div>
+                        <div class="col-6 align-self-center p-0">
+                            <p class="text-center my-auto">R$16.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-2 mb-4 bg-dark">
+                    <div class="row m-0">
+                        <div class="col-6 align-self-center p-0">
+                            <p class="text-center my-auto text-light">Total</p>
+                        </div>
+                        <div class="col-6 align-self-center p-0">
+                            <p class="text-center my-auto text-light">R$82.09</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <button class="col-12 btn btn-success align-self-center" type="button" data-toggle="modal" data-target="#finishPurchase">Finalizar Compra</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="finishPurchase" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Finalizar Compra</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="cep">CEP</label>
+                                            <input type="text" class="form-control" id="cep" placeholder="00000-000">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="address">Endereço</label>
+                                            <input type="text" class="form-control" id="address" aria-describedby="address" placeholder="Rua X, número 15 B 20 Apto 101">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="paymentMethod">Forma de Pagamento</label>
+                                            <select class="form-control" id="paymentMethod">
+                                                <option>Boleto Bancário</option>
+                                                <option>Cartão de Crédito</option>
+                                                <option>Cartão de Débito</option>
+                                            </select>
+                                        </div>
+                                        <div class="row m-0 w-100 mb-2">
+                                            <div class="mx-auto">
+                                                <button type="submit" class="btn btn-primary">Imprimir Boleto</button>
+                                            </div>
+                                        </div>
+                                        <!-- Cartão
+                                        <div class="form-group">
+                                            <label for="cardNumber">Número do Cartão</label>
+                                            <input type="text" class="form-control" id="cardNumber" aria-describedby="address" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cardValidate">Validade</label>
+                                            <input type="text" class="form-control" id="cardValidate" aria-describedby="address" placeholder="01/01">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cardCvv">CVV</label>
+                                            <input type="text" class="form-control" id="cardCvv" aria-describedby="address" placeholder="000">
+                                        </div>
+                                        -->
+
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Eu aceito os <a href="#">termos e condições</a></label>
+                                        </div>
+                                        <div class="row m-0 w-100">
+                                            <div class="mx-auto">
+                                                <button type="submit" class="btn btn-success">Salvar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
