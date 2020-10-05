@@ -11,25 +11,31 @@
 </head>
 
 <body>
-    <header class="header navbar navbar-dark navbar-expand-md mb-4">
+    <header class="header navbar navbar-dark navbar-expand-md">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Botão de Navegação">
-            <span class="navbar-toggler-icon"></span>
+           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
-            <div class="collapse navbar-collapse" id="menu">
-                <div class="navbar-nav mr-auto">
-                    <a class="nav-link nav-item header__button" href="./index.html" class="navbar-brand"><img class="logo" src="./assets/images/logos/ph.svg" alt="Logo"></a>
-                    <a class="nav-link nav-item header__button" href="./about.html">Sobre</a>
-                    <a class="nav-link nav-item header__button" href="./products.html">Produtos</a>
-                </div>
-                <div class="navbar-nav">
-                    <a class="nav-link nav-item header__button" href="./cart.html">Carrinho</a>
-                    <a class="nav-link nav-item header__button" href="./login.html">Login</a>
-                    <a class="nav-link nav-item header__button" href="./sign_up.html">Cadastro</a>
-                </div>
-            </div>
+           <div class="collapse navbar-collapse" id="menu">
+              <div class="navbar-nav mr-auto">
+                 <a class="nav-item header__button" href="./index.html" class="navbar-brand"><img class="logo" src="./assets/images/logos/ph.svg" alt="Logo"></a>
+                 <a class="nav-item header__button" href="./about.html">Sobre</a>
+                 <a class="nav-item header__button" href="./products.html">Produtos</a>
+              </div>
+              <div class="navbar-nav">
+                 <a class="nav-item header__button" href="./login.html">Login</a>
+                 <a class="nav-item header__button" href="./sign_up.html">Cadastro</a>
+                 <a class="nav-item header__button" href="./cart.html">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart2" fill="#FAFAFA" xmlns="http://www.w3.org/2000/svg">
+                       <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>
+                    Carrinho
+                    <span class="badge badge-light">4</span>
+                 </a>
+              </div>
+           </div>
         </div>
-    </header>
+     </header>
 
     <div class="container mb-4">
         <h2 class="text-center">Produtos</h2>
@@ -53,7 +59,7 @@
 
         <div class="row"> 
             <div class="col-lg-4 col-md-6">
-                <div class="card mb-3">
+                <div class="card mb-3 shadow">
                     <img class="product__image" src="./assets/images/produtos/nebulizador.jpg" alt="Nebulizador">
                     <div class="card-body">
                         <div class="text-center">
@@ -70,7 +76,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="card mb-3">
+                <div class="card mb-3 shadow">
                     <img class="product__image" src="./assets/images/produtos/seringa.jpg" alt="Seringa">
                     <div class="card-body">
                         <div class="text-center">
@@ -87,7 +93,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="card mb-3">
+                <div class="card mb-3 shadow">
                     <img class="product__image" src="./assets/images/produtos/estetoscopio.jpg" alt="Estetoscopio">
                     <div class="card-body">
                         <div class="text-center">
@@ -104,7 +110,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="card mb-3">
+                <div class="card mb-3 shadow">
                     <img class="product__image" src="./assets/images/produtos/mascara.jpg" alt="Máscara">
                     <div class="card-body">
                         <div class="text-center">
@@ -121,7 +127,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="card mb-3">
+                <div class="card mb-3 shadow">
                     <img class="product__image" src="./assets/images/produtos/medidor_de_pressao.jpg" alt="Medidor de Pressão">
                     <div class="card-body">
                         <div class="text-center">
@@ -138,7 +144,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="card mb-3">
+                <div class="card mb-3 shadow">
                     <img class="product__image" src="./assets/images/produtos/medidor_glicose.jpg" alt="Medidor de Glicose">
                     <div class="card-body">
                         <div class="text-center">
